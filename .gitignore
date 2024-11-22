@@ -39,5 +39,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Webstrom
+# Ignore Webstorm files
 .idea/*
