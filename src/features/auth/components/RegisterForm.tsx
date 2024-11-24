@@ -10,10 +10,12 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-
+import { User, Mail } from "lucide-react";
 
 import {RegisterFormSchema, RegisterSchema} from "@/features/auth/schema";
 import {z} from "zod";
+import InputIcon from "@/features/auth/components/ui/InputIcon";
+import InputPassword from "@/features/auth/components/ui/InputPassword";
 
 const RegisterForm = () => {
     const form = RegisterFormSchema();
@@ -22,16 +24,15 @@ const RegisterForm = () => {
         console.table(values);
     }
 
-
     return (
-        <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <Form {...form} >
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
                 <FormField control={form.control} render={
                     ({field}) => (
                     <FormItem>
                         <FormLabel>Username</FormLabel>
                         <FormControl>
-                            <Input placeholder="John Doe" {...field} />
+                            <InputIcon inputType="text" placeholder="John Doe 123" Icon={User} field={field} />
                         </FormControl>
                         <FormMessage />
                     </FormItem>)
@@ -39,9 +40,9 @@ const RegisterForm = () => {
                 <FormField control={form.control} render={
                     ({field}) => (
                         <FormItem>
-                            <FormLabel>Username</FormLabel>
+                            <FormLabel>Email</FormLabel>
                             <FormControl>
-                                <Input placeholder="john.doe@example.com" type="email" {...field} />
+                                <InputIcon inputType="email" placeholder="john.doe@example.com" Icon={Mail} field={field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>)
@@ -51,7 +52,7 @@ const RegisterForm = () => {
                         <FormItem>
                             <FormLabel>Password</FormLabel>
                             <FormControl>
-                                <Input placeholder="Password" type="password" {...field} />
+                                <InputPassword field={field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>)
@@ -61,12 +62,15 @@ const RegisterForm = () => {
                         <FormItem>
                             <FormLabel>Confirm Password</FormLabel>
                             <FormControl>
-                                <Input placeholder="Confirm Password" type="password" {...field} />
+                                <InputPassword field={field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>)
                 } name="confirmPassword"  />
-                <Button type="submit">Register</Button>
+                <div className="flex justify-end gap-4">
+                <Button type="button" variant="outline">Login</Button>
+                <Button type="submit" >Register</Button>
+                </div>
             </form>
         </Form>
     )

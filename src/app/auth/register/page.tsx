@@ -12,7 +12,7 @@ import {Separator} from "@/components/ui/separator";
 
 const Page = () => {
     return (
-        <Card>
+        <Card className="bg-gray-50">
             <CardHeader>
                 <CardTitle>
                     Sign Up
