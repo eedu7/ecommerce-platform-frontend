@@ -9,7 +9,7 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
-import { User, Mail } from "lucide-react";
+import { User, Mail, Loader } from "lucide-react";
 
 import {RegisterFormSchema, RegisterSchema} from "@/features/auth/schema";
 import {z} from "zod";
@@ -80,7 +80,14 @@ const RegisterForm = () => {
                         </FormItem>)
                 } name="confirmPassword"  />
                 <div className="flex justify-end">
-                <Button type="submit" disabled={isPending}>Register</Button>
+                <Button type="submit" disabled={isPending}>
+                    Register
+                    {
+                     isPending &&
+                    <Loader className="animate-spin" />
+                    }
+
+                </Button>
 
                 </div>
             </form>
