@@ -9,19 +9,31 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
 import { User, Mail } from "lucide-react";
 
 import {RegisterFormSchema, RegisterSchema} from "@/features/auth/schema";
 import {z} from "zod";
 import InputIcon from "@/features/auth/components/ui/InputIcon";
 import InputPassword from "@/features/auth/components/ui/InputPassword";
+import React from "react";
+import useRegisterUser from "@/features/auth/hooks/useRegistration";
+
 
 const RegisterForm = () => {
     const form = RegisterFormSchema();
+    const [isVisible, setIsVisible] = React.useState<boolean>(false);
+
+    const {mutate, isPending} = useRegisterUser();
+
 
     const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
-        console.table(values);
+        const {email, username, password} = values;
+        const data = {
+            email,
+            username,
+            password,
+        }
+        mutate(data);
     }
 
     return (
@@ -52,7 +64,7 @@ const RegisterForm = () => {
                         <FormItem>
                             <FormLabel>Password</FormLabel>
                             <FormControl>
-                                <InputPassword field={field} />
+                                <InputPassword isVisible={isVisible} setIsVisible={setIsVisible} field={field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>)
@@ -62,14 +74,14 @@ const RegisterForm = () => {
                         <FormItem>
                             <FormLabel>Confirm Password</FormLabel>
                             <FormControl>
-                                <InputPassword field={field} />
+                                <InputPassword showButton={false} isVisible={isVisible} setIsVisible={setIsVisible} field={field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>)
                 } name="confirmPassword"  />
-                <div className="flex justify-end gap-4">
-                <Button type="button" variant="outline">Login</Button>
-                <Button type="submit" >Register</Button>
+                <div className="flex justify-end">
+                <Button type="submit" disabled={isPending}>Register</Button>
+
                 </div>
             </form>
         </Form>

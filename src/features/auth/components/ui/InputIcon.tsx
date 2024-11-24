@@ -1,10 +1,11 @@
 import {Input} from "@/components/ui/input";
-import type {Icon} from "lucide-react";
+import {IconNode} from "lucide-react";
 
 interface InputIconProps {
     inputType: string;
     placeholder: string;
-    Icon: typeof Icon;
+    // @ts-ignore
+    Icon: typeof IconNode;
     field: any;
 }
 
