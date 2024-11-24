@@ -1,13 +1,13 @@
 
 import {useMutation} from "@tanstack/react-query";
-import {registerUserAPI} from "@/features/auth/api";
+import {loginUserAPI} from "@/features/auth/api";
 import {getQueryClient} from "@/lib/get-query-client";
 
 
-const useRegisterUser = () => {
+const useLogin = () => {
     return useMutation(
         {
-            mutationFn: registerUserAPI,
+            mutationFn: loginUserAPI,
             onSuccess: data => {
                 console.log("Success!", data)
             },
@@ -20,4 +20,4 @@ const useRegisterUser = () => {
     )
 }
 
-export default useRegisterUser;
+export default useLogin;
