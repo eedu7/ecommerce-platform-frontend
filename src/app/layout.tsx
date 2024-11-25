@@ -21,12 +21,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (<html lang="en">
-        <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
-        >
-        <ReactQueryProvider>
-            {children}
-        </ReactQueryProvider>
-        </body>
-        </html>);
+    <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 h-screen max-w-screen-xl mx-auto`}
+    >
+    <ReactQueryProvider>
+        {children}
+    </ReactQueryProvider>
+    </body>
+    </html>);
 }
