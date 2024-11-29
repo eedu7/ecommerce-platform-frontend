@@ -22,7 +22,7 @@ const LoginFormDialog = ({isFormOpen, setIsFormOpen, openRegisterForm}: Register
                             Sign in
                         </DialogTitle>
                         <div className="mx-4">
-                            <Button onClick={openRegisterForm} variant="ghost">Register</Button>
+                            <Button onClick={openRegisterForm} variant="secondary" className="p-4 hover:font-semibold rounded-2xl hover:scale-110 animate-in">Register</Button>
                         </div>
                     </div>
                 </DialogHeader>

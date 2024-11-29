@@ -6,6 +6,8 @@ import {z} from "zod"
 import {Button} from "@/components/ui/button"
 import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form"
 import {Input} from "@/components/ui/input"
+import {Checkbox} from "@/components/ui/checkbox";
+import {Label} from "@/components/ui/label";
 
 const LoginFormSchema = z.object({
     email: z.string().email(), password: z.string().min(8, {message: "Password must be at least 8 characters."})
@@ -27,7 +29,7 @@ const LoginForm = () => {
     }
 
     return (<Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
             <FormField
                 control={form.control}
                 name="email"
@@ -51,10 +53,24 @@ const LoginForm = () => {
                     <FormMessage/>
                 </FormItem>)}
             />
+            <div className="flex justify-between py-2">
+                <div className="flex justify-end items-center gap-2">
+                    <Checkbox id="stay-signed-in" checked />
+                    <Label htmlFor="stay-signed-in">Stay signed in</Label>
+                </div>
+                <div>
+                    <p className="text-xs text-muted-foreground underline cursor-pointer">
+                        Forgot your password?
+                    </p>
+                </div>
+            </div>
 
-            <div className="flex justify-center my-2">
+            <div className="flex justify-center">
                 <Button disabled={!form.formState.isValid} type="submit" size="lg"
-                        className="w-48 rounded-3xl">Register</Button>
+                        className="w-32 rounded-3xl">Sign in</Button>
+            </div>
+            <div className="text-center">
+                <p className="text-xs underline text-muted-foreground tracking-widest">Trouble signing in?</p>
             </div>
         </form>
     </Form>)

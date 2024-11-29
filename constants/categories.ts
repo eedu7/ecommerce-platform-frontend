@@ -20,7 +20,7 @@ export const categories: CategoryType[] = [{
 }, {
     id: 8, name: "Craft Supplies & Tools"
 }, {
-    id: 10, name: "Electronics & Accessoires"
+    id: 10, name: "Electronics & Accessories"
 }, {
     id: 11, name: "Gifts"
 }, {
