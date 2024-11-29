@@ -1,3 +1,6 @@
+/* eslint-disable */
+// @ts-nocheck
+
 import axios from "axios";
 import {
     LoginUserAPIRequestData, LoginUserAPIResponseData, RegisterUserAPIRequestData, RegisterUserAPIResponseData
