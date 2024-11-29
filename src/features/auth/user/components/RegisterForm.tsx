@@ -8,6 +8,7 @@ import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@
 import {Input} from "@/components/ui/input"
 import InputPassword from "@/features/auth/user/components/ui/InputPassword";
 import TermsAndServiceParagraph from "@/terms";
+import useAuth from "@/hooks/auth";
 
 const RegisterFormSchema = z.object({
     username: z
@@ -31,8 +32,10 @@ const RegisterForm = () => {
         }, mode: "onChange"
     })
 
+    const {register} = useAuth();
+
     const onSubmit = (values: z.infer<typeof RegisterFormSchema>) => {
-        console.table(values)
+        register.mutate(values);
     }
 
     return (<Form {...form}>
@@ -70,7 +73,7 @@ const RegisterForm = () => {
                     <FormMessage/>
                 </FormItem>)}
             />
-            <TermsAndServiceParagraph />
+            <TermsAndServiceParagraph/>
             <div className="flex justify-center my-2">
                 <Button disabled={!form.formState.isValid} type="submit" size="lg"
                         className="w-48 rounded-3xl">Register</Button>

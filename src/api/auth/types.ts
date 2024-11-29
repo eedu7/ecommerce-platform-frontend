@@ -1,5 +1,5 @@
 export type RegisterUserAPIRequestData = {
-    username: string; emai: string; password: string;
+    username: string; email: string; password: string;
 }
 
 export type LoginUserAPIRequestData = {
