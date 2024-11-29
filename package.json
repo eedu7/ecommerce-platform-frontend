@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -H 192.168.18.33",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 192.168.18.33",
     "lint": "next lint"
   },
   "dependencies": {

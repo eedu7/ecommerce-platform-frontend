@@ -4,24 +4,25 @@ import SearchInput from "@/features/header/components/SearchInput";
 import {GiftIcon, HeartIcon, ShoppingBasketIcon} from "lucide-react";
 import CategoryDropdown from "@/features/header/components/CategoryDropdown";
 import LogoIcon from "@/features/header/components/LogoIcon";
-import RegisterFormDialog from "@/features/auth/user/components/RegisterFormDialog";
+import OpenFormRegisterLogin from "@/features/auth/user/components/OpenFormRegisterLogin";
 
 const Navbar = () => {
+
     return (<nav className="my-4">
         <div className="flex justify-around">
             <div className="flex">
-                <LogoIcon />
+                <LogoIcon/>
             </div>
             <div className="flex gap-6 w-8/12">
-                <CategoryDropdown  />
+                <CategoryDropdown/>
                 <div className="flex-grow">
-                    <SearchInput />
+                    <SearchInput/>
                 </div>
-                <RegisterFormDialog/>
+                <OpenFormRegisterLogin/>
             </div>
             <div className="flex gap-4">
                 <Button size="icon" variant="ghost" className="rounded-3xl hover:bg-sky-100">
-                    <HeartIcon />
+                    <HeartIcon/>
                 </Button>
                 <Button size="icon" variant="ghost" className="rounded-3xl hover:bg-sky-100">
                     <GiftIcon/>

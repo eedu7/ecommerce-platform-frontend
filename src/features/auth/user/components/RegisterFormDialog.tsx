@@ -1,28 +1,34 @@
 "use client"
 import React from 'react'
-import {Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger} from "@/components/ui/dialog";
+import {Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle} from "@/components/ui/dialog";
 import RegisterForm from "@/features/auth/user/components/RegisterForm";
 import {Separator} from "@/components/ui/separator";
 import SocialMediaLogins from "@/features/auth/user/components/SocialMediaLogins";
+import {AdditionalInfo} from "@/terms";
 
-const RegisterFormDialog = () => {
-    return (<Dialog>
-            <DialogTrigger
-                className="h-9 px-4 py-2 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground">
-                Sign In
-            </DialogTrigger>
-            <DialogContent>
+interface RegisterFormDialogProps {
+    isFormOpen: boolean;
+    setIsFormOpen: (isOpen: boolean) => void;
+}
+
+const RegisterFormDialog = ({isFormOpen, setIsFormOpen}: RegisterFormDialogProps) => {
+    return (
+        <Dialog open={isFormOpen} onOpenChange={setIsFormOpen}>
+            <DialogContent className="w-96">
                 <DialogHeader>
                     <DialogTitle className="flex flex-col gap-2">
                         <p>Create you account</p>
-                        <p className="text-sm font-normal text-foreground">Registration is easy.</p>
+                        <p className="md:text-sm  text-xs font-normal text-foreground">Registration is easy.</p>
                     </DialogTitle>
                 </DialogHeader>
                 <RegisterForm/>
                 <Separator/>
                 <DialogFooter>
-                    <div className="w-full">
-                        <SocialMediaLogins/>
+                    <div className="w-full flex flex-col gap-2">
+                        <div className="flex justify-center">
+                            <SocialMediaLogins/>
+                        </div>
+                        <AdditionalInfo/>
                     </div>
                 </DialogFooter>
 

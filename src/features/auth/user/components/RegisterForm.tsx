@@ -7,9 +7,11 @@ import {Button} from "@/components/ui/button"
 import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form"
 import {Input} from "@/components/ui/input"
 import InputPassword from "@/features/auth/user/components/ui/InputPassword";
+import TermsAndServiceParagraph from "@/terms";
 
 const RegisterFormSchema = z.object({
     username: z
+
         .string()
         .min(3, {
             message: "Username must be at least 3 characters.",
@@ -23,7 +25,6 @@ const RegisterFormSchema = z.object({
 
 const RegisterForm = () => {
 
-
     const form = useForm<z.infer<typeof RegisterFormSchema>>({
         resolver: zodResolver(RegisterFormSchema), defaultValues: {
             username: "", email: "", password: "",
@@ -35,7 +36,7 @@ const RegisterForm = () => {
     }
 
     return (<Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2.5">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-1">
             <FormField
                 control={form.control}
                 name="email"
@@ -69,11 +70,7 @@ const RegisterForm = () => {
                     <FormMessage/>
                 </FormItem>)}
             />
-            <p className="text-muted-foreground text-sm">
-                By clicking Register or Continue with Google, Facebook, or Apple, you agree to Etsy <span
-                className="underline text-blue-400">Terms of User</span> and <span
-                className="underline text-blue-400">Privacy Policy</span>
-            </p>
+            <TermsAndServiceParagraph />
             <div className="flex justify-center my-2">
                 <Button disabled={!form.formState.isValid} type="submit" size="lg"
                         className="w-48 rounded-3xl">Register</Button>
