@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a92c9957-44f3-4e9c-b2fa-ac4dbf35d5b3" name="Changes" comment="FEAT:  Deleted">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fonts/GeistMonoVF.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/fonts/GeistVF.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eedu7&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/eedu7/ecommerce-platform-frontend.git&quot;,
+    &quot;accountId&quot;: &quot;f32a63fc-ba96-41f3-8797-27697e0c9f53&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2pMpdEBHCDoURblTpOxOMD6lFVR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.index.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WebstormProjects/etsy/ecommerce-platform-frontend/public/assets/icons&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebstormProjects\\etsy\\ecommerce-platform-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\etsy\ecommerce-platform-frontend\public\assets\icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\etsy\ecommerce-platform-frontend\src" />
+      <recent name="D:\WebstormProjects\etsy\ecommerce-platform-frontend\src\features\auth\user\components" />
+      <recent name="D:\WebstormProjects\etsy\ecommerce-platform-frontend\src\features\header\components" />
+      <recent name="D:\WebstormProjects\etsy\ecommerce-platform-frontend\src\features\header" />
+      <recent name="D:\WebstormProjects\etsy\ecommerce-platform-frontend\src\app\(products)" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a92c9957-44f3-4e9c-b2fa-ac4dbf35d5b3" name="Changes" comment="" />
+      <created>1732585883620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732585883620</updated>
+      <workItem from="1732585884589" duration="11578000" />
+      <workItem from="1732765155197" duration="7919000" />
+      <workItem from="1732805701643" duration="820000" />
+      <workItem from="1732807046709" duration="748000" />
+      <workItem from="1732856813368" duration="11351000" />
+      <workItem from="1732933151669" duration="14836000" />
+      <workItem from="1733044915869" duration="2195000" />
+      <workItem from="1733057044052" duration="349000" />
+    </task>
+    <task id="LOCAL-00001" summary="FEAT: Created NextJS project using pnpm package manager">
+      <option name="closed" value="true" />
+      <created>1732592029770</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732592029770</updated>
+    </task>
+    <task id="LOCAL-00002" summary="MINOR: Added the shadcn">
+      <option name="closed" value="true" />
+      <created>1732592583252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732592583252</updated>
+    </task>
+    <task id="LOCAL-00003" summary="FEAT: Added the login form, login dialog">
+      <option name="closed" value="true" />
+      <created>1732861855220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732861855220</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FEAT: Modify the forms ui">
+      <option name="closed" value="true" />
+      <created>1732877223603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732877223603</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FEAT: Added the useRegister and userLogin API, and their request and response type">
+      <option name="closed" value="true" />
+      <created>1732878211252</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732878211252</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FEAT: Created the useAuth hook">
+      <option name="closed" value="true" />
+      <created>1732890734979</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732890734979</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FEAT: Added the tanstack react-query provider,">
+      <option name="closed" value="true" />
+      <created>1732891020893</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732891020893</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FEAT: Added the useAuth, register hook to the register form, and its working fine">
+      <option name="closed" value="true" />
+      <created>1732891273283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732891273283</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FEAT: New Project">
+      <option name="closed" value="true" />
+      <created>1732942304329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732942304329</updated>
+    </task>
+    <task id="LOCAL-00010" summary="MINOR: Added the shadcn">
+      <option name="closed" value="true" />
+      <created>1732942745384</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732942745384</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FEAT: Added the HeaderCategories.tsx section and navigation menu">
+      <option name="closed" value="true" />
+      <created>1732982678426</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732982678429</updated>
+    </task>
+    <task id="LOCAL-00012" summary="FEAT:  Deleted">
+      <option name="closed" value="true" />
+      <created>1733047877515</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733047877515</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FEAT: Created NextJS project using pnpm package manager" />
+    <MESSAGE value="FEAT: Added the login form, login dialog" />
+    <MESSAGE value="FEAT: Modify the forms ui" />
+    <MESSAGE value="FEAT: Added the useRegister and userLogin API, and their request and response type" />
+    <MESSAGE value="FEAT: Created the useAuth hook" />
+    <MESSAGE value="FEAT: Added the tanstack react-query provider," />
+    <MESSAGE value="FEAT: Added the useAuth, register hook to the register form, and its working fine" />
+    <MESSAGE value="FEAT: New Project" />
+    <MESSAGE value="MINOR: Added the shadcn" />
+    <MESSAGE value="FEAT: Added the HeaderCategories.tsx section and navigation menu" />
+    <MESSAGE value="FEAT:  Deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT:  Deleted" />
+  </component>
+</project>
