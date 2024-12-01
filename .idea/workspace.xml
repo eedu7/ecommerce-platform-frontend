@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a92c9957-44f3-4e9c-b2fa-ac4dbf35d5b3" name="Changes" comment="FEAT: New Project, and added the shadcn">
-      <change afterPath="$PROJECT_DIR$/src/app/auth/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auth/sign-in/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/auth/sign-up/rafce.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/components/SignInForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/auth/components/SignUpForm.tsx" afterDir="false" />
+    <list default="true" id="a92c9957-44f3-4e9c-b2fa-ac4dbf35d5b3" name="Changes" comment="Added the shadcn components and project structure">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/sign-up/rafce.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/sign-up/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/SignUpForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/SignUpForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +101,8 @@
       <workItem from="1732856813368" duration="11351000" />
       <workItem from="1732933151669" duration="14836000" />
       <workItem from="1733044915869" duration="2195000" />
-      <workItem from="1733057044052" duration="2007000" />
+      <workItem from="1733057044052" duration="2298000" />
+      <workItem from="1733064260154" duration="4083000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT: Created NextJS project using pnpm package manager">
       <option name="closed" value="true" />
@@ -206,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733057425759</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added the shadcn components and project structure">
+      <option name="closed" value="true" />
+      <created>1733059348296</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733059348296</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +238,7 @@
     <MESSAGE value="FEAT: Added the HeaderCategories.tsx section and navigation menu" />
     <MESSAGE value="FEAT:  Deleted" />
     <MESSAGE value="FEAT: New Project, and added the shadcn" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEAT: New Project, and added the shadcn" />
+    <MESSAGE value="Added the shadcn components and project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the shadcn components and project structure" />
   </component>
 </project>
