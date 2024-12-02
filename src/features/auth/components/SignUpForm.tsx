@@ -7,7 +7,7 @@ import {z} from "zod"
 import {Button} from "@/components/ui/button"
 import {Form, FormControl, FormField, FormItem, FormMessage,} from "@/components/ui/form"
 import {Input} from "@/components/ui/input"
-
+import InputWithIcon from "@/features/auth/components/ui/InputWithIcon";
 
 const SignUpFormSchema = z.object({
     username: z.string().min(3, {message: "Username must be at least 3 characters"}).max(64, {message: "Username must be at most 64 characters long."}),
@@ -35,7 +35,7 @@ const SignUpForm = () => {
                 name="username"
                 render={({field}) => (<FormItem>
                     <FormControl>
-                        <Input placeholder="username" {...field} />
+                        <InputWithIcon placeholder="John Doe" label="Username" field={field}/>
                     </FormControl>
                     <FormMessage/>
                 </FormItem>)}
@@ -45,8 +45,9 @@ const SignUpForm = () => {
                 name="email"
                 render={({field}) => (<FormItem>
                     <FormControl>
-                        <Input type="email" placeholder="email" {...field} />
+                        <InputWithIcon label="Email" type="email" placeholder="john.doe@example.com" field={field}/>
                     </FormControl>
+
 
                     <FormMessage/>
                 </FormItem>)}
@@ -74,8 +75,7 @@ const SignUpForm = () => {
                 </FormItem>)}
             />
             <div className="flex flex-row-reverse gap-4">
-                <Button type="submit" >Submit</Button>
-                <Button variant="secondary" type="button">Login</Button>
+                <Button type="submit" className="w-32 font-semibold tracking-widest">Submit</Button>
             </div>
         </form>
     </Form>)
